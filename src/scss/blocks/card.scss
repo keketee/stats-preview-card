@@ -1,0 +1,83 @@
+@use '../mixins/responsive.scss' as*;
+
+.card{
+    position: relative;
+    background-color: var(--card);
+    width: 327px;
+    height: 780px;
+    border-radius: 10px 10px 0 0;
+
+
+
+   &::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 327px;
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--purple-opacity);
+    }
+
+    
+    &__image{ 
+        border-radius: 10px 10px 0 0;
+    }
+
+
+    &__inside{
+        padding: 40px 31px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    &__title {
+        color: var(--white);
+        font-weight:700 ;
+        font-size: 28px;
+        line-height: 32px;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__inside--purple {
+        color: var(--purple);
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: rgba(255, 255, 255, 0.758);
+        text-align: center;
+    }
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 24px;
+    
+    &__number{
+        font-family: "Inter", sans-serif;
+        color: var(--white);
+        font-weight:700 ;
+        font-size: 24px;
+    }
+    &__info{
+        color:(rgba(255, 255, 255, 0.604));
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        font-family: "Lexend Deca", sans-serif;
+
+    }
+}
+
+
+
+
