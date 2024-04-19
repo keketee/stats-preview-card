@@ -22,11 +22,21 @@
   <body>
     <main class="main">
       <div class="card">
-        <img
-          class="card__image"
-          src="./assets/image-header-mobile.jpg"
-          alt=""
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/image-header-desktop.jpg"
+          />
+          <source
+            media="(min-width: 360px)"
+            srcset="./assets/image-header-mobile.jpg"
+          />
+          <img
+            class="card__image"
+            src="./assets/image-header-mobile.jpg"
+            alt=""
+          />
+        </picture>
         <div class="card__inside">
           <h2 class="card__title">
             Get <span class="card__inside--purple">insights</span> that help
@@ -36,19 +46,19 @@
             Discover the benefits of data analytics and make better decisions
             regarding revenue, customer experience, and overall efficiency.
           </p>
-        </div>
-        <div>
-          <div class="container">
-            <span class="container__number">10k+</span>
-            <span class="container__info">Companies</span>
-          </div>
-          <div class="container">
-            <span class="container__number">314</span>
-            <span class="container__info">Templates</span>
-          </div>
-          <div class="container">
-            <span class="container__number">12M+</span>
-            <span class="container__info">Queries</span>
+          <div class="stats__container">
+            <div class="container">
+              <span class="container__number">10k+</span>
+              <span class="container__info">Companies</span>
+            </div>
+            <div class="container">
+              <span class="container__number">314</span>
+              <span class="container__info">Templates</span>
+            </div>
+            <div class="container">
+              <span class="container__number">12M+</span>
+              <span class="container__info">Queries</span>
+            </div>
           </div>
         </div>
       </div>
